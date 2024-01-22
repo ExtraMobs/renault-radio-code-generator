@@ -20,7 +20,7 @@ def generate_radio_code(precode):
     z = (y * 7) % 100
     
     generat_code = str(
-        (math.floor(z / 10) + (z % 10) * 10 + ((259 % x) % 100) * 5 * 5 * 4)
+        (math.floor(z / 10) + (z % 10) * 10 + ((259 % x) % 100) * 100)
     )
     output = "0000"[: -len(generat_code)] + generat_code
     return output
