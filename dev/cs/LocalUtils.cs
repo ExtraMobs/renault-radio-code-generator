@@ -1,5 +1,3 @@
-using System;
-
 namespace LocalUtils {
     class StringLocalUtils{
         static public string EncodeToAscii(string input){
@@ -32,9 +30,9 @@ namespace LocalUtils {
         static public string GetPrecode(){
             string inputPrecode = "";
             while (
-                (inputPrecode.Length < 4 || inputPrecode.Length > 4)
-                || !(StringLocalUtils.IsAlphabetic(inputPrecode[0]))
-                || !(StringLocalUtils.IsNumeric(inputPrecode.Substring(1)))
+                inputPrecode.Length < 4 || inputPrecode.Length > 4
+                || !StringLocalUtils.IsAlphabetic(inputPrecode[0])
+                || !StringLocalUtils.IsNumeric(inputPrecode.Substring(1))
             )
             {
                 Console.WriteLine("Please Enter your Precode :");

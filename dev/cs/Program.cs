@@ -1,5 +1,4 @@
-﻿using System;
-using LocalUtils;
+﻿using LocalUtils;
 using RadioCodeGenerator;
 
 namespace Program{
